@@ -42,6 +42,7 @@ body{
 .editor .preview{
     width:calc(100% - 500px);
     height: 100%;
+    color: #fff;
 }
 .editor .preview  iframe{
     width: 100%;
