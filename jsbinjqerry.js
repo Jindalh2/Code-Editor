@@ -1,17 +1,17 @@
-const htmlEditor = CodeMirror(document.querySelector(".editor .code .html-code"),{
+const htmlEditor = CodeMirror.fromTextArea(document.querySelector(".editor .code .html-code .Codemirror-html"),{
 	lineNumbers:true,
-	tabSize:4,
-	mode:"xml"
+	// tabSize:4,
+	// mode:"xml"
 });
-const cssEditor = CodeMirror(document.querySelector(".editor .code .css-code"),{
+const cssEditor = CodeMirror.fromTextArea(document.querySelector(".editor .code .css-code .Codemirror-css"),{
 	lineNumbers:true,
-	tabSize:4,
-	mode:"css"
+	// tabSize:4,
+	// mode:"css"
 });
-const jsEditor = CodeMirror(document.querySelector(".editor .code .js-code"),{
+const jsEditor = CodeMirror.fromTextArea(document.querySelector(".editor .code .js-code .Codemirror-js"),{
 	lineNumbers:true,
-	tabSize:4,
-	mode:"javascript"
+	// tabSize:4,
+	// mode:"javascript"
 });
 
 document.querySelector("#run-btn").addEventListener("click",function(){
