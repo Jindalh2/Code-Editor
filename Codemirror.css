@@ -109,7 +109,9 @@
   }
   
   /* DEFAULT THEME */
-  
+   .cm-s-default {
+     border: 3px solid white;
+   }
   .cm-s-default .cm-header {color: blue;}
   .cm-s-default .cm-quote {color: #090;}
   .cm-negative {color: #d44;}

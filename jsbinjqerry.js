@@ -1,23 +1,24 @@
 const htmlEditor = CodeMirror.fromTextArea(document.querySelector(".editor .code .html-code .Codemirror-html"),{
 	lineNumbers:true,
-	// tabSize:4,
+	tabSize:3,
 	// mode:"xml"
 });
 const cssEditor = CodeMirror.fromTextArea(document.querySelector(".editor .code .css-code .Codemirror-css"),{
 	lineNumbers:true,
-	// tabSize:4,
+	tabSize:3,
 	// mode:"css"
 });
 const jsEditor = CodeMirror.fromTextArea(document.querySelector(".editor .code .js-code .Codemirror-js"),{
 	lineNumbers:true,
-	// tabSize:4,
+	tabSize:3,
 	// mode:"javascript"
 });
 
 document.querySelector("#run-btn").addEventListener("click",function(){
 	let htmlCode = htmlEditor.getValue();
 	let cssCode = "<style>html{color : white;}" + cssEditor.getValue() + "</style>";
-	console.log(cssEditor.getValue());
+	// console.log(cssEditor.getValue());
+	console.log(document.getElementById('theme').href);
 	let jsCode = "<scri" + "pt>" + jsEditor.getValue() + "</scri" + "pt>";
 	let previewWindow = document.querySelector("#preview-window").contentWindow.document;
 	previewWindow.open();
