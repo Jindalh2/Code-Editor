@@ -13,6 +13,43 @@
   
   /* PADDING */
   
+.header button{
+  padding: 10px 20px;
+  margin-top: 10px;
+  background: blanchedalmond;
+  width: 90px;
+  color: #111;
+  font-size: 16px;
+  font-weight : 600;
+  border: none;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.header button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.header button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.header button:hover span {
+  padding-right: 25px;
+}
+
+.header button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
   .CodeMirror-lines {
     padding: 4px 0; /* Vertical padding around content */
   }

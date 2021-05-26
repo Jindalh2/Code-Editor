@@ -31,7 +31,7 @@ document.querySelector("#run-btn").addEventListener("click",function(){
 
 
 document.getElementById('switch').onclick = function() {
-    if (document.getElementById('theme').href == "http://localhost:3000/dark.css") {
+    if (document.getElementById('theme').href == "http://127.0.0.1:5500/dark.css") {
       document.getElementById('theme').href = "style.css";
       document.getElementById('theme1').href = "Codemirrorlight.css";
       document.getElementById('theme2').href = "jsbinjqerry.js";
