@@ -16,11 +16,11 @@ const jsEditor = CodeMirror(document.querySelector(".editor .code .js-code"),{
 
 document.querySelector("#run-btn").addEventListener("click",function(){
 	let htmlCode = htmlEditor.getValue();
-	let cssCode = "<style>" + cssEditor.getValue() + "</style>";
+	let cssCode = "<style>html{color : red;}" + cssEditor.getValue() + "</style>";
 	//console.log(cssEditor.getValue());
-	if( document.getElementById('theme').href=="http://localhost:3000/dark.css"){
-		 cssCode = "<style>html{color : white;}" + cssEditor.getValue() + "</style>";
-	}
+	// if( document.getElementById('theme').href=="http://localhost:3000/dark.css"){
+	// 	 cssCode = "<style>html{color : w;}" + cssEditor.getValue() + "</style>";
+	// }
 
 	let jsCode = "<scri" + "pt>" + jsEditor.getValue() + "</scri" + "pt>";
 	let previewWindow = document.querySelector("#preview-window").contentWindow.document;
