@@ -27,7 +27,7 @@
 		<button id="run-btn" style="position: absolute; top:5px font-family: Quicksand; font-weight: 800;"><span>Run</span></button>
 	</div>
 	<div class="editor" style="height: 440px;">
-		<div style="margin-top: 25px; height:40px;"class="code">
+		<div style="margin-top: 25px; height:40px; "class="code" >
 			<h1 style="text-align: center; font-family: Quicksand; font-weight: 800;">HTML</h1>
 			<div class="html-code" contentEditable=true data-text="Enter text here" >
 		
@@ -52,7 +52,18 @@
 		</div>
 	</div>
 
-	<script type="text/javascript" src= "jsbinjquerrydark.js" id="theme2"></script>
+	<script type="text/javascript" src= "jsbinjquerrydark.js" id="theme2"
+
+      
+   
+      window.onload = function() {
+        editor = CodeMirror(document.getElementById("code"), {
+          mode: "text/html",
+          extraKeys: {"Ctrl-Space": "autocomplete"},
+          value: document.documentElement.innerHTML
+        });
+      };
+	></script>
 </body>
 </html>
 
